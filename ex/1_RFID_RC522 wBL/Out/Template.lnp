@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+".\out\system_stm32f10x.o"
+".\out\startup_stm32f10x_md.o"
+".\out\stm32f10x_it.o"
+".\out\main.o"
+".\out\delay.o"
+".\out\spi.o"
+".\out\mfrc522.o"
+".\out\i2c.o"
+".\out\i2c_lcd.o"
+".\out\misc.o"
+".\out\stm32f10x_rcc.o"
+".\out\stm32f10x_gpio.o"
+".\out\stm32f10x_spi.o"
+".\out\stm32f10x_tim.o"
+".\out\stm32f10x_i2c.o"
+--library_type=microlib --strict --scatter ".\Out\Template.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\List\Template.map" -o .\Out\Template.axf
